@@ -1,10 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing – Curso de Git</title>
 
+  <!-- Bootstrap 5 (vía CDN) -->
+<link  rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous">
+
+  <!-- Estilos propios – paleta azul (primary) y rojo (secondary) -->
+  <style>
+    :root {
+      --bs-primary: #0d6efd; /* azul Bootstrap por defecto */
+      --bs-secondary: #dc3545; /* rojo Bootstrap por defecto */
+    }
+    /* cabecera hero */
+    .hero {
+      background: linear-gradient(
+          rgba(0, 0, 0, 0.55),
+          rgba(0, 0, 0, 0.55)
+        ),
+        url("https://source.unsplash.com/1600x600?code,git") center/cover no-repeat;
+      color: #fff;
+      padding: 6rem 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Curso Git</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#clases">Clases</a></li>
+          <li class="nav-item"><a class="nav-link" href="#apuntes">Apuntes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tips">Tips Git</a></li>
+          <li class="nav-item">
+            <a
+              class="btn btn-outline-light ms-lg-3"
+              target="_blank"
+              href="https://github.com/Darjom/clases-git"
+              >Repositorio 📂</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <h1>Domina Git desde cero</h1>
+      <p class="lead mb-4">
+        Apuntes, clases diarias y los mejores consejos para elevar tu flujo de trabajo.
+      </p>
+      <a href="#clases" class="btn btn-secondary btn-lg">Empezar ahora</a>
+    </div>
+  </header>
+
+  <!-- Sección Clases -->
+  <section id="clases" class="py-5">
+    <div class="container">
+      <h2 class="text-primary fw-bold mb-4 text-center">Clases</h2>
+
+      <div class="row g-4">
+        <!-- Tarjeta día 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Día 1 – Instalación &amp; Configuración</h5>
+              <p class="card-text">
+                Prepara tu entorno, configura Git y realiza tu primer commit.
+              </p>
+              <a href="clases/01-instalacion-setup/" class="stretched-link">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta día 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Día 2 – Commits y Historial</h5>
+              <p class="card-text">
+                Aprende a registrar cambios de manera clara y a viajar por el historial.
+              </p>
+              <a href="clases/02-basics-commits/" class="stretched-link">Ver más</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tarjeta día 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">Día 3 – Ramas &amp; Merge</h5>
+              <p class="card-text">
+                Gestiona funcionalidades en paralelo y domina la fusión de ramas.
+              </p>
+              <a href="clases/03-branches-merges/" class="stretched-link">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <!-- … añade más tarjetas cuando haga falta … -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Apuntes -->
+  <section id="apuntes" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-primary fw-bold mb-4 text-center">Apuntes detallados</h2>
+      <p class="lead text-center mb-5">
+        Documentación extensa y ejemplos paso a paso para profundizar en cada tema.
+      </p>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <a href="apuntes/01-instalacion.html">Instalación de Git en distintos sistemas</a>
+            </li>
+            <li class="list-group-item">
+              <a href="apuntes/02-commits.html">Commits atómicos y mensajes efectivos</a>
+            </li>
+            <li class="list-group-item">
+              <a href="apuntes/03-branches.html">Flujos de trabajo con ramas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Tips -->
+  <section id="tips" class="py-5">
+    <div class="container">
+      <h2 class="text-primary fw-bold mb-4 text-center">Tips rápidos de Git</h2>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 bg-primary text-white rounded shadow-sm h-100">
+            <h5>Alias productivos</h5>
+            <p class="mb-0">
+              Crea atajos como <code>lg</code> para <code>git log --oneline --graph</code>.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-secondary text-white rounded shadow-sm h-100">
+            <h5>Revertir sin miedo</h5>
+            <p class="mb-0">
+              Usa <code>git switch -</code> para volver a la rama anterior al instante.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-primary text-white rounded shadow-sm h-100">
+            <h5>Stash selectivo</h5>
+            <p class="mb-0">
+              Guarda solo archivos específicos con <code>git stash push path/archivo</code>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 Curso de Git – Todos los derechos reservados</p>
+      <small
+        >Desarrollado con <span class="text-primary">Bootstrap 5</span> y mucho
+        <span class="text-secondary">&hearts;</span></small
+      >
+    </div>
+  </footer>
+
+  <!-- JavaScript de Bootstrap (vía CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
 </body>
 </html>
