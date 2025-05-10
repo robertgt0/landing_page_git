@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Título de la Página</title>
+  <>Trabajo grupal\\\\</🐐>
 </head>
 <body>
-  <h1>¡Hola, feje!</h1>
-  <p>Este es un documento HTML5 básico.</p>
+  <h1>¡Hola, feje!🐐</h1>
+  <p>El intento es lo que importa.</p>
 </body>
 </html>
