@@ -6,7 +6,7 @@
   <title>Título de la Página</title>
 </head>
 <body>
-  <h1>¡Hola, mundo!</h1>
+  <h1>¡Hola, feje!</h1>
   <p>Este es un documento HTML5 básico.</p>
 </body>
 </html>
