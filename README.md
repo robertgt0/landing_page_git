@@ -7,7 +7,7 @@
 </head>
 <body>
   <h1>¡Hola, feje!🐐</h1>
-  <p>El intento es lo que importa✨.</p>
+  <p>El intento es lo que importa✨:).</p>
 </body>
 </html>
 
